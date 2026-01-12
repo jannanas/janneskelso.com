@@ -14,7 +14,7 @@ highlight_themes_css = [
 
 [extra]
 use_cdn = true
-favicon = "/icons/favicon.png"
+favicon = "/img/favicon.png"
 fancy_code = true
 mathjax = false
 mathjax_dollar_inline_enable = true

@@ -22,7 +22,5 @@ template = "homepage.html"
     <h1 class="homepage-hero-title">
         Hi! I'm <span class="primary-color">J</span>annes
     </h1>
-    <p class="homepage-hero-subtitle">A modern and minimalistic blog theme powered by Zola.</p>
+    <p class="homepage-hero-subtitle">This page is still a work in progress, but I'm working on it.</p>
 </div>
-
-TEXT

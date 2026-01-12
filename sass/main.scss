@@ -9,6 +9,7 @@
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 html {
@@ -234,11 +235,12 @@ table td {
   color: var(--text-1);
   letter-spacing: -.5px;
   font-size: 0.8em;
-  margin-bottom:.7em;
-  margin-top: auto;
+  position: fixed;
+  bottom: 0.7em;
+  right: 0.7em;
+  text-align: right;
   margin-right: 0;
   margin-left: auto;
-  padding: 1em 0;
 }
 
 .footer a {

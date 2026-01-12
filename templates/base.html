@@ -119,7 +119,7 @@
                         {% for social in config.extra.socials %}
                             <a class="social" {{ link_attrs | safe }} href="{{ social.url }} ">
                                 <img alt="{{ social.name }}"
-                                        src="{{ get_url(path='icons/' ~ social.icon ~ '.svg') }}" />
+                                        src="{{ get_url(path='img/' ~ social.icon ~ '.svg') }}" />
                             </a>
                         {% endfor %}
                     </div>
@@ -132,8 +132,8 @@
                     <a id="dark-mode-toggle"
                         onclick="toggleTheme(); event.preventDefault();"
                         href="#">
-                        <img src="{{ get_url(path='icons/sun.svg') }}" id="sun-icon" style="filter: invert(1)" alt="Light"/>
-                        <img src="{{ get_url(path='icons/moon.svg') }}" id="moon-icon" alt="Dark" />
+                        <img src="{{ get_url(path='img/sun.svg') }}" id="sun-icon" style="filter: invert(1)" alt="Light"/>
+                        <img src="{{ get_url(path='img/moon.svg') }}" id="moon-icon" alt="Dark" />
                     </a>
                     <script> setTheme("dark") </script>
                 </nav>
@@ -143,14 +143,16 @@
             {% block main_content %}
                 Nothing here?!
             {% endblock main_content %}
-
-            <div class="footer">
-                Built on 
-                <a href="https://www.getzola.org/" target="_blank">Zola</a>
-                 with the 
-                <a href="https://github.com/not-matthias/apollo" target="_blank">apollo</a>
-                 theme.
-            </div>
+        </div>
+        
+        <div class="footer">
+            <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+            <span>  |  </span>
+            Built on 
+            <a href="https://www.getzola.org/" target="_blank">Zola</a>
+             with the 
+            <a href="https://github.com/not-matthias/apollo" target="_blank">apollo</a>
+             theme.
         </div>
     </body>
 
