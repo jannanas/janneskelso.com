@@ -1,5 +1,5 @@
 +++
-template = "homepage.html"
+template = "special_page.html"
 +++
 
 <style>
