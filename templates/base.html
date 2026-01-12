@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="base" content="{{ config.base_url }}" />
+
+        {# Site title #}
+        {% set current_path = current_path | default(value="/") %}
+        {% if current_path == "/" %}
+            <title>{{ config.title }}</title>
+        {% else %}
+            <title>
+                {% if page.title %}
+                    {{ page.title }}
+                {% elif section.title %}
+                    {{ section.title }}
+                {% elif config.title %}
+                    {{ config.title }}
+                {% endif %}
+            </title>
+
+            <meta property="og:title" content="{% if page.title -%}{{ page.title }}{% elif config.title -%}{{ config.title }}{% else -%}Post{% endif -%}" />
+        {% endif %}
+
+        {% if page.description %}
+            <meta property="og:description" content="{{ page.description }}" />
+        {% elif config.description %}
+            <meta property="og:description" content="{{ config.description }}" />
+        {% endif %}
+
+        {% if page.description %}
+            <meta name="description" content="{{ page.description }}" />
+        {% elif config.description %}
+            <meta name="description" content="{{ config.description }}" />
+        {% endif %}
+
+        {# Favicon #}
+        {% if config.extra.favicon %}
+            <link rel="icon"
+                type="image/png"
+                href="{{ get_url(path=config.extra.favicon) }}" />
+        {% endif %}
+
+        {# Font from cdn or disk #}
+        {% if config.extra.use_cdn | default(value=false) %}
+            <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+            <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css" />
+            <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@4.5.8/index.min.css" />
+        {% else %}
+            <link href={{ get_url(path="fonts.css") }} rel="stylesheet" />
+        {% endif %}
+
+        {# Syntax theme #}
+        {% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+            <link id="syntaxThemeLight"
+                rel="stylesheet"
+                type="text/css"
+                href="/syntax-theme-light.css" />
+            <link id="syntaxThemeDark"
+                rel="stylesheet"
+                type="text/css"
+                href="/syntax-theme-dark.css" />
+        {% endif %}
+
+        {# Fancy Codeblock #}
+        {% if config.extra.fancy_code %}
+            <script defer src={{ get_url(path="js/codeblock.js") }}></script>
+        {% endif %}
+
+        {% if config.extra.mathjax | default(value=false) %}
+            {% if config.extra.mathjax_dollar_inline_enable | default(value=false) %}
+                <script>
+                    MathJax = {
+                        tex: {
+                            inlineMath: [
+                                ['$', '$'],
+                                ['\\(', '\\)']
+                            ]
+                        }
+                    };
+                </script>
+            {% endif %}
+            <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+            </script>
+        {% endif %}
+
+        <link rel="stylesheet"
+            type="text/css"
+            href="{{ get_url(path='theme/light.css') }}" />
+        <link id="darkModeStyle"
+            rel="stylesheet"
+            type="text/css"
+            href="{{ get_url(path='theme/dark.css') }}" />
+
+        <script src={{ get_url(path="js/themetoggle.js") }}></script>
+        <script> setTheme(getSavedTheme()) </script>
+
+        {% set show_comment = false %}
+
+
+        <link rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="{{ get_url(path='main.css') }}" />
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <div class="main">
+                    <a href={{ config.base_url }}>{{ config.title }}</a>            
+                    <div class="socials">
+                        {% set link_attrs = "rel='me'" %}
+                        {% for social in config.extra.socials %}
+                            <a class="social" {{ link_attrs | safe }} href="{{ social.url }} ">
+                                <img alt="{{ social.name }}"
+                                        src="{{ get_url(path='icons/' ~ social.icon ~ '.svg') }}" />
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <nav>
+                    {% for menu in config.extra.menu %}
+                        <a href={{ get_url(path=menu.url) }} style="margin-left:.7em">{{ menu.name }}</a>
+                    {% endfor %}
+            
+                    <a id="dark-mode-toggle"
+                        onclick="toggleTheme(); event.preventDefault();"
+                        href="#">
+                        <img src="{{ get_url(path='icons/sun.svg') }}" id="sun-icon" style="filter: invert(1)" alt="Light"/>
+                        <img src="{{ get_url(path='icons/moon.svg') }}" id="moon-icon" alt="Dark" />
+                    </a>
+                    <script> setTheme("dark") </script>
+                </nav>
+            </header>            
+
+            {# Post page is the default #}
+            {% block main_content %}
+                Nothing here?!
+            {% endblock main_content %}
+
+            <div class="footer">
+                Built on 
+                <a href="https://www.getzola.org/" target="_blank">Zola</a>
+                 with the 
+                <a href="https://github.com/not-matthias/apollo" target="_blank">apollo</a>
+                 theme.
+            </div>
+        </div>
+    </body>
+
+</html>

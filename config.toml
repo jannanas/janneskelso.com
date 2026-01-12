@@ -1,14 +1,30 @@
 base_url = "https://janneskelso.com"
-compile_sass = true
 title = "Jannes Kelso"
-# description = "A clean blogging theme"
+description = "This is an example description"
+compile_sass = true
+minify_html = true
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "ayu-dark", filename = "syntax-theme-dark.css" },
+  { theme = "ayu-light", filename = "syntax-theme-light.css" },
+]
 
 [extra]
-hyde_sticky = false
-hyde_theme = "theme-base-00"
-hyde_links = [
-    {url = "https://janneskelso.com/posts", name = "Posts"},
-    {url = "https://janneskelso.com/resume", name = "Resume"},
-    {url = "https://janneskelso.com", name = "About"},
+use_cdn = true
+favicon = "/icons/favicon.png"
+fancy_code = true
+mathjax = false
+mathjax_dollar_inline_enable = true
+
+menu = [
+    { name = "Posts", url = "/posts", weight = 1 },
+    { name = "Resume", url = "/resume", weight = 2 },
 ]
-# footer = ""
+
+socials = [
+    { name = "linkedin", url = "https://www.linkedin.com/in/janneskelso/", icon = "linkedin" },
+    { name = "github", url = "https://github.com/jannanas", icon = "github" },
+]

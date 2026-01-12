@@ -1,0 +1,13 @@
+:root.dark {
+  --text-0: #fff0f5;
+  --text-1: grey;
+  --bg-0: #250401;
+  --bg-1: #351A1A;
+  --bg-2: #4F2727;
+  --primary-color: #DA3B1E;
+  --hover-color: var(--bg-0);
+
+  .social > img {
+    filter: invert(1);
+  }
+}

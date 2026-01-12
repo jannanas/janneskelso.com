@@ -1,9 +1,28 @@
 +++
-title = "Hi! I'm Jannes"
-template = "special_page.html"
+template = "homepage.html"
 +++
 
-Your landing page content goes here...
+<style>
+.homepage-hero {
+    text-align: center;
+    padding: 2rem 0;
+}
 
+.homepage-hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
 
-Give credit at the bottom somewhere
+.homepage-hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+
+</style>
+<div class="homepage-hero">
+    <h1 class="homepage-hero-title">
+        Hi! I'm <span class="primary-color">J</span>annes
+    </h1>
+    <p class="homepage-hero-subtitle">A modern and minimalistic blog theme powered by Zola.</p>
+</div>
+
+TEXT

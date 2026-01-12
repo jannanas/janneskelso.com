@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    {% if section.title %}
+        <div class="page-header">
+            {{ section.title }}
+        </div>
+    {% endif %}
+
+    {% if section.content %}
+        <div class="section-content">
+            {{ section.content | safe }}
+        </div>
+    {% endif %}
+
+    <main class="list">
+        <ul>
+            {%- for page in section.pages %}
+                <li class="list-item">
+                    <section>
+                        <div class="post-header">
+                            <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+            
+                            <h1 class="title">
+                                <a href={{ page.permalink | safe }}>{{ page.title }}</a>
+                            </h1>
+                        </div>
+                    </section>
+                </li>
+            {% endfor -%}
+        </ul>
+    </main>
+{% endblock main_content %}

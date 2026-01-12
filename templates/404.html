@@ -1,7 +1,10 @@
-{% extends "index.html" %}
+{% extends "page.html" %}
 
-{% block content %}
-<div class="post">
-  <h1 class="post-title">404: Page not found</h1>
-</div>
-{% endblock content %}
+{% block main_content %}
+    <main class="not-found-header">
+        <div class="page-header">
+            {{ "404" }}
+        </div>
+        <span>Page not found :(</span>
+    </main>
+{% endblock main_content %}

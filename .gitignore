@@ -1,0 +1,8 @@
+public/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log

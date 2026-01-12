@@ -1,5 +1,7 @@
 +++
 title = "Posts"
 sort_by = "date"
-template = "index.html"
+
+[extra]
+comment = true
 +++

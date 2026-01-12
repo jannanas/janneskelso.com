@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <main>
+        <article>
+            <section class="body">
+                {% if section.title %}
+                    <div class="page-header"> {{ section.title }} </div>
+                {% endif %}
+
+                {{ section.content | safe }}
+            </section>
+        </article>
+    </main>
+{% endblock main_content %}
