@@ -20,8 +20,8 @@ mathjax = false
 mathjax_dollar_inline_enable = true
 
 menu = [
-    { name = "Posts", url = "/posts", weight = 1 },
-    { name = "Resume", url = "/resume", weight = 2 },
+    { name = "/posts", url = "/posts", weight = 1 },
+    { name = "/resume", url = "/resume", weight = 2 },
 ]
 
 socials = [

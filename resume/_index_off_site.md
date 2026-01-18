@@ -18,24 +18,21 @@ i {
     display: block;
     height: 0.7em;
 }
-h1, h2 {
-    font-size: 1.2em
-}
 </style>
 
 <br>
 
 <table><tr><td style="border-right: solid 3px var(--primary-color); padding-right: 15px;">
 <!-- ============ HEADER ============ -->
-<center style="margin-top: 0em; font-size: 2.3em; font-family: var(--header-font);">Resume<span class="primary-color">.</span></center>
+<center style="margin-top: 0em; font-size: 2.3em; font-family: var(--header-font);"><a href="https://www.janneskelso.com">Jannes Kelso<span class="primary-color">.</span></a></center>
 
 <!-- ============ PROFILE ============ -->
-<h1 style="margin-top: 0.5em">Profile</h1>
+<br style="margin: 0px">
 I am an early-career research technologist excited to collaborate with journalists and researchers, with a focus on data science and OSINT investigations.
 
-<!-- ============ EDUCATION ============ -->
 ---
-<h1 style="margin-top: 0.5em">Education</h1>
+<!-- ============ EDUCATION ============ -->
+<h1 style="margin: 0.5em">Education</h1>
 <table><tr><td>
 <strong>Bachelor of Computer Science and Engineering | TU Delft</strong>
 <span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2022-2026</span><br>
@@ -56,7 +53,7 @@ I am an early-career research technologist excited to collaborate with journalis
 
 <!-- ============ EXPERIENCE ============ -->
 ---
-<h1 style="margin-top: 0.5em">Experience</h1>
+<h1 style="margin: 0.5em">Experience</h1>
 <table><tr><td>
 <strong>Volunteer Data Scientist and Researcher | FPU</strong>
 <span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2025-2026</span><br>
@@ -93,9 +90,10 @@ I am an early-career research technologist excited to collaborate with journalis
 
 </td><td style="text-align:right; padding-left: 15px; font-size: 0.85em">
 <!-- ============ DETAILS ============ -->
-<h2 style="margin-top: 0.5em">Details</h2>
+<h2 style="margin: 0.5em;">Details</h2>
 janneskelso@gmail.com<br>
-Netherlands
++4915771018041 (Sig)<br>
+Delft,  Netherlands
 
 <!-- ============ LINKS ============ -->
 <br><h2 style="margin: 0.5em;">Links</h2>
@@ -119,4 +117,4 @@ Financial OSINT<br>
 Writing
 </td></tr></table>
 
-<br><br><br>
+<br>

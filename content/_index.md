@@ -24,3 +24,7 @@ template = "special_page.html"
     </h1>
     <p class="homepage-hero-subtitle">This page is still a work in progress, but I'm working on it.</p>
 </div>
+
+<!-- and aspiring data journalist
+community builder
+relationships -->
