@@ -41,20 +41,20 @@ I am an early-career research technologist excited to collaborate with journalis
 <h1 style="margin-top: 0.5em">Education</h1>
 <table><tr><td>
 <strong>Bachelor of Computer Science and Engineering | TU Delft</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2022-2026</span><br>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2022-current</span><br>
 <i>Covered data science, machine learning, and software development</i>
 </td></tr>
 
 <tr><td><span class="spacer"></span>
-<strong>Follow the Money | Finance Uncovered</strong>
+<strong>Follow the Money Training | Finance Uncovered</strong>
 <span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">May 2025</span><br>
-<i>Training held at Dataharvest, a European investigative data-journalism conference</i>
+<i>Held at Dataharvest, a European investigative data-journalism conference</i>
 </td></tr>
 
 <tr><td><span class="spacer"></span>
-<strong>Digital Tools for Investigation | CIJ</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">February 2024</span><br>
-<i>Training held by the Centre for Investigative Journalism</i>
+<strong>Digital Tools for Investigation Training | Centre for Investigative Journalism</strong>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">Feb 2024</span><br>
+<i>Covered OSINT tools for search, verification, and geolocation</i>
 </td></tr></table>
 
 <!-- ============ EXPERIENCE ============ -->
@@ -67,9 +67,9 @@ I am an early-career research technologist excited to collaborate with journalis
 </td></tr>
 
 <tr><td><span class="spacer"></span>
-<strong>Treasurer of Communal Housing Association</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2024-2025</span><br>
-<i>Administered finances, evaluated loans, and served on the board</i>
+<strong>Treasurer of a Communal Housing Association</strong>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2024-current</span><br>
+<i>Evaluate loans, administer finances, and served on the board</i>
 </td></tr>
 
 <tr><td><span class="spacer"></span>
@@ -91,7 +91,7 @@ I am an early-career research technologist excited to collaborate with journalis
 
 <tr><td><span class="spacer"></span>
 <strong>Intern Software Developer | Neugelb Studios</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">August 2020</span><br>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">Aug 2020</span><br>
 </td></tr></table>
 
 </td><td style="text-align:right; padding-left: 15px; font-size: 0.85em">
@@ -102,7 +102,6 @@ Netherlands
 
 <!-- ============ LINKS ============ -->
 <br><h2 style="margin: 0.5em;">Links</h2>
-<a href="https://www.janneskelso.com">janneskelso.com</a><br>
 <a href="https://www.linkedin.com/in/janneskelso/">LinkedIn</a><br>
 <a href="https://github.com/jannanas">GitHub</a>
 
@@ -122,4 +121,4 @@ Financial OSINT<br>
 Writing
 </td></tr></table>
 
-<br><br><br>
+<br>

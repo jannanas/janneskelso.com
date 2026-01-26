@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-    <main>
-        <article>
-            <section class="body">
-                {% if section.title %}
-                    <div class="page-header"> {{ section.title }} </div>
-                {% endif %}
-
-                {{ section.content | safe }}
-            </section>
-        </article>
-    </main>
+    <div>
+        <main>
+            <article>
+                <div class="title">
+                    {% if section.title %}
+                        <div class="page-header"> {{ section.title }} </div>
+                    {% endif %}
+                </div>
+                
+                <section class="body">    
+                    {{ section.content | safe }}
+                </section>
+            </article>
+        </main>
+    </div>
 {% endblock main_content %}

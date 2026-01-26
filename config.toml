@@ -1,6 +1,6 @@
 base_url = "https://janneskelso.com"
 title = "Jannes Kelso"
-description = "This is an example description"
+description = "Hi! I'm Jannes Kelso"
 compile_sass = true
 minify_html = true
 
@@ -20,6 +20,7 @@ mathjax = false
 mathjax_dollar_inline_enable = true
 
 menu = [
+    { name = "/home", url = "/", weight = 0 },
     { name = "/posts", url = "/posts", weight = 1 },
     { name = "/resume", url = "/resume", weight = 2 },
 ]

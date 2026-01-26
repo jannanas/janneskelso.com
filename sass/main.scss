@@ -222,12 +222,15 @@ svg {
   color: var(--text-1);
   letter-spacing: -.5px;
   font-size: 0.8em;
-  position: fixed;
-  bottom: 0.7em;
-  right: 0.7em;
+  // position: fixed;
+  // bottom: 0.7em;
+  // right: 0.7em;
   text-align: right;
-  margin-right: 0;
+  // margin-right: 0;
   margin-left: auto;
+  margin-top: auto;
+  // align-items: flex-end;
+  // flex-direction: column-reverse;
 }
 
 .footer a {
