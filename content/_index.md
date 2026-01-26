@@ -3,28 +3,29 @@ template = "special_page.html"
 +++
 
 <style>
-.homepage-hero {
+.homepage {
     text-align: center;
     padding: 2rem 0;
 }
-
-.homepage-hero-title {
+.homepage-title {
     font-size: 3rem;
     margin-bottom: 1rem;
+    line-height: 100%;
 }
-
-.homepage-hero-subtitle {
-    font-size: 1.25rem;
+.homepage-subtitle {
+    font-size: .9rem;
     margin-bottom: 1rem;
-
 </style>
-<div class="homepage-hero">
-    <h1 class="homepage-hero-title">
+
+<div class="homepage">
+    <h1 class="homepage-title">
         Hi! I'm <span class="primary-color">J</span>annes
     </h1>
-    <p class="homepage-hero-subtitle">This page is still a work in progress, but I'm working on it.</p>
+    <p class="homepage-subtitle">Currently open to research and development assignments at <a href="mailto:janneskelso@gmail.com">janneskelso@gmail.com</a>.</p>
 </div>
 
-<!-- and aspiring data journalist
-community builder
-relationships -->
+<div style="display: flex;">
+    <img style="float: right"/ src="{{ get_url(path='img/profile.jpeg') }}">
+    I'm a research technologist, activist, student, and communitarian. 
+</div>
+
