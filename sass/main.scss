@@ -9,6 +9,8 @@
 
 html, body {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
   margin: 0;
 }
 
@@ -161,23 +163,8 @@ svg {
   max-height: 15px
 }
 
-// table {
-//   border-spacing: 0;
-//   border-collapse: collapse
-// }
-
-// table th {
-//   padding: 6px 13px;
-//   border: 1px solid #dfe2e5;
-//   font-size: large
-// }
-
-// table td {
-//   padding: 0px 13px;
-//   border: 1px solid #dfe2e5
-// }
-
 .content {
+  min-width: 350px;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 24px;

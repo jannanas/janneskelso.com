@@ -4,6 +4,9 @@ template = "special_page.html"
 
 <style>
 table, table td, table tr {
+    border-spacing: 0;
+    border: 0px;
+    border-collapse: collapse
     width: 100%;
     vertical-align: top;
     margin: 0px;
@@ -25,7 +28,7 @@ h1, h2 {
 
 <br>
 
-<table><tr><td style="border-right: solid 3px var(--primary-color); padding-right: 15px;">
+<table style=""><tr><td style="border-right: solid 3px var(--primary-color); padding-right: 15px; min-width:300px">
 <!-- ============ HEADER ============ -->
 <center style="margin-top: 0em; font-size: 2.3em; font-family: var(--header-font);">Resume<span class="primary-color">.</span></center>
 
@@ -59,7 +62,7 @@ I am an early-career research technologist excited to collaborate with journalis
 <h1 style="margin-top: 0.5em">Experience</h1>
 <table><tr><td>
 <strong>Volunteer Data Scientist and Researcher | FPU</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2025-2026</span><br>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2025-current</span><br>
 <i>Researched the causes of SLAPP cases, trained model to predict SLAPP rates, and built web scrapers at Free Press Unlimited</i>
 </td></tr>
 
