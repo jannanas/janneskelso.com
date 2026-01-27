@@ -22,7 +22,8 @@ i {
 
 <br>
 
-<table><tr><td style="border-right: solid 3px var(--primary-color); padding-right: 15px;">
+<div style="font-size: 0.9em">
+<table><tr><td style="border-right: solid 3px var(--primary-color); padding-right: 10px;">
 <!-- ============ HEADER ============ -->
 <center style="margin-top: 0em; font-size: 2.3em; font-family: var(--header-font);"><a href="https://www.janneskelso.com">Jannes Kelso<span class="primary-color">.</span></a></center>
 
@@ -35,8 +36,14 @@ I am an early-career research technologist excited to collaborate with journalis
 <h1 style="margin: 0.5em">Education</h1>
 <table><tr><td>
 <strong>Bachelor of Computer Science and Engineering | TU Delft</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2022-current</span><br>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2022 - current</span><br>
 <i>Covered data science, machine learning, and software development</i>
+</td></tr>
+
+<tr><td><span class="spacer"></span>
+<strong>Minor in Food Security | University of Leiden</strong>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2025</span><br>
+<i>Covered conflict studies, international law, and multidimensional poverty</i>
 </td></tr>
 
 <tr><td><span class="spacer"></span>
@@ -56,19 +63,19 @@ I am an early-career research technologist excited to collaborate with journalis
 <h1 style="margin: 0.5em">Experience</h1>
 <table><tr><td>
 <strong>Volunteer Data Scientist and Researcher | FPU</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2025-current</span><br>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2025 - current</span><br>
 <i>Researched the causes of SLAPP cases, trained model to predict SLAPP rates, and built web scrapers at Free Press Unlimited</i>
 </td></tr>
 
 <tr><td><span class="spacer"></span>
 <strong>Treasurer of a Communal Housing Association</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2024-current</span><br>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2024 - current</span><br>
 <i>Evaluate loans, administer finances, and served on the board</i>
 </td></tr>
 
 <tr><td><span class="spacer"></span>
 <strong>Technical Assistant | Studentaanhuis</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2024-2025</span><br>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2024 - 2025</span><br>
 <i>Provided support and education with any technical problems</i>
 </td></tr>
 
@@ -80,7 +87,7 @@ I am an early-career research technologist excited to collaborate with journalis
 
 <tr><td><span class="spacer"></span>
 <strong>Intern Data Scientist | Penta</strong>
-<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2021-2022</span><br>
+<span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">2021 - 2022</span><br>
 </td></tr>
 
 <tr><td><span class="spacer"></span>
@@ -88,7 +95,7 @@ I am an early-career research technologist excited to collaborate with journalis
 <span class="meta" style="font-size: 0.9em; float: right; white-space: nowrap;">Aug 2020</span><br>
 </td></tr></table>
 
-</td><td style="text-align:right; padding-left: 15px; font-size: 0.85em">
+</td><td style="text-align:right; padding-left: 10px; font-size: 0.85em">
 <!-- ============ DETAILS ============ -->
 <h2 style="margin: 0.5em;">Details</h2>
 janneskelso@gmail.com<br>
@@ -110,11 +117,10 @@ Competent Dutch
 <!-- ============ Skills ============ -->
 <br><h2 style="margin: 0.5em;">Skills</h2>
 Scraping<br>
-Data mining<br>
+Data visualization<br>
 Data analysis<br>
 Machine learning<br>
 Financial OSINT<br>
 Writing
 </td></tr></table>
-
-<br>
+</div>

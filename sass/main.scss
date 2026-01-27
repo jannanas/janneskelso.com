@@ -5,6 +5,7 @@
   --text-font: "Jetbrains Mono";
   --header-font: "Space Grotesk", "Helvetica", sans-serif;
   --code-font: "Jetbrains Mono";
+  --img-url: get_url(path='img/')
 }
 
 html, body {
@@ -128,7 +129,7 @@ h6::before {
 }
 
 img {
-  border: 3px solid #ececec;
+  border: 3px solid var(--text-0);
   max-width: 100%
 }
 
